@@ -14,17 +14,17 @@ Dataset is downloaded from https://www.openml.org/d/1226 . It is used also in 20
 
 ## Summary
 
-Different models from sklearn such as RandomForestClassifier, ExtraTreesClassifier, IsolationForest, LogisticRegression, DecisionTreeClassifier are built with hyperparameter combinations. Finally, ...
+Different models from sklearn such as RandomForestClassifier, ExtraTreesClassifier and LogisticRegression
+are used for predicting clicks of ads. The hyperparameters of models are tuned with grid search methods. You can see the scores below.
 
 * Three Modeling Approach
-    * LogisticRegression Only
+    * LogisticRegression
     * RandomForestClassifier
     * ExtraTreesClassifier
 
-**Models**|**Parameters**|**accuracy\_score**|**f1\_score**
+**Models**|**Hyperparameters**|**accuracy\_score**|**f1\_score**
 :-----:|:-----:|:-----:|:-----:
-LogisticRegression|sklearn default|0.83|0.91
-LogisticRegression with Randomized Grid Search| |0..84|0.91
-RandomForestClassifier|sklearn default|0.83|0.91
-RandomForestClassifier with Randomized Grid Search| |0.83|0.91
-ExtraTreesClassifier with 5 fold CV|sklearn default|0.82|0.53
+RandomForestClassifier|sklearn default|0.833|0.881
+LogisticRegression with Randomized Grid Search|See notebook|0.832|0.908
+RandomForestClassifier with Randomized Grid Search|See notebook|0.839|0.898
+ExtraTreesClassifier with 5 fold CV|sklearn default|0.825|0.536
